@@ -14,17 +14,15 @@ import java.util.ArrayDeque;
  *
  * @author marck
  */
-public class Exercici2_lsR {
+public class Exercici1_lsR {
         public static void main(String[] args) {
-        String[] paths;
-        ArrayDeque<File> stack = new ArrayDeque<File>();
-        
+        String[] paths;        
             try{
                 if(args.length==1){
                     Path path = Paths.get(args[0]);
                 
                 System.out.println("Enter Path direction: ");
-                String pathName = "C:\\Users\\marck\\"+path; // keeping  the path name with inserted as argument
+                String pathName = "C:\\Users\\Jefe Maestro\\"+path; // keeping  the path name with inserted as argument
                 File directory = new File(pathName);
                 paths = directory.list();// Directory created by File instance, which assigns a path name
                     for(String file: paths){
