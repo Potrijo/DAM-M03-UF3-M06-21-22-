@@ -15,9 +15,14 @@ import java.nio.file.Paths;
  */
 public class Exercici3_cp {
     public static void main(String[] args) {
-            if(args.length==1){
+            if(args.length==2){
                 Path path = Paths.get(args[0]);
-                File f = new File(path.toString());
+                Path pathDestiny = Paths.get(args[1]);
+                System.out.println(path);
+                File savedFile = new File(path.toString());
+                File newFile = new File(pathDestiny.toString());
+                savedFile.renameTo(newFile);
+                savedFile.deleteOnExit();
             }
     }
 
