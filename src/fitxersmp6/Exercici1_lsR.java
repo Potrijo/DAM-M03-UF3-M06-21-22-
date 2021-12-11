@@ -22,7 +22,7 @@ public class Exercici1_lsR {
                     Path path = Paths.get(args[0]);
                 
                 System.out.println("Enter Path direction: ");
-                String pathName = "C:\\Users\\Jefe Maestro\\"+path; // keeping  the path name with inserted as argument
+                String pathName = "C:\\Users\\marck\\"+path; // keeping  the path name with inserted as argument
                 File directory = new File(pathName);
                 paths = directory.list();// Directory created by File instance, which assigns a path name
                     for(String file: paths){
