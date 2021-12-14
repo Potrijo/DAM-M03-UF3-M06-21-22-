@@ -1,9 +1,11 @@
 package jardi;
 
+import java.io.Serializable;
+
 /**
  * La classe Altibus defineix un tipus de planta.
  */
-public class Altibus extends Planta {
+public class Altibus extends Planta implements Serializable{
 	/**
 	 * L'altibus funciona com qualsevol altra planta, amb l'excepció
 	 * que produeix llavors quan la seva alçada és superior a 7.

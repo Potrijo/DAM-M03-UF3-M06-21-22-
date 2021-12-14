@@ -5,7 +5,7 @@ package jardi;
  * element del jardí. Fixeu-vos com gràcies a l'ús d'aquesta interfície
  * hem aconseguit que Jardi no depengui de cap classe, com Planta o Llavor.
  */
-public interface ElementJardi {
+public interface ElementJardi{
 	/**
 	 * Aquest mètode retorna el caràcter que s'ha de printar per aquest element
 	 * a l'altura especificada. Per exemple, per una planta, es retornaria el

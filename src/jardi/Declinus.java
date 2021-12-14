@@ -1,9 +1,11 @@
 package jardi;
 
+import java.io.Serializable;
+
 /**
  * La classe Declinus defineix un tipus concret de planta.
  */
-public class Declinus extends Planta {
+public class Declinus extends Planta implements Serializable{
 	/**
 	 * Pel funcionament de la Declinus és important saber si la planta
 	 * es troba en el seu cicle de creixement o de decreixement. Aquest

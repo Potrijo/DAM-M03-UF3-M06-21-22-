@@ -1,10 +1,12 @@
 package jardi;
 
+import java.io.Serializable;
+
 /**
  * La classe Jardi gestiona els elements d'un jardí i permet
  * veure'n l'evolució a mida que passa el temps.
  */
-public class Jardi {
+public class Jardi implements Serializable{
 	/**
 	 * Constant que defineix l'alçada màxima d'un jardí
 	 */
