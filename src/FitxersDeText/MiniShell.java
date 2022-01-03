@@ -34,7 +34,7 @@ public class MiniShell {
 		while (!command.equals("exit")) {
 			System.out.println(workingDirectory.normalize() + "> ");
 			command = sc.nextLine();
-			parts = command.split("\\s+", 2); // separem el primer espai
+			parts = command.split("\\s+", 2); // separem el primer espaiii
 			if (parts.length > 0) {
 				if (parts[0].equals("ls")) {
 					ls();
