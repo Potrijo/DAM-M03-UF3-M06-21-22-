@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Pais;
+package FitxersAccesAleatori;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author marck
  */
-public class Exercici2_SobrescrituraDePaisos {
+public class Exercici1_ModificadorDePaisos {
 
 	private static String readChars(RandomAccessFile fitxer, int nChars) throws IOException {
 		StringBuilder b = new StringBuilder();
@@ -27,7 +27,6 @@ public class Exercici2_SobrescrituraDePaisos {
 	}
 
 	public static void main(String[] args) {
-                Pais nouPais;
                 Scanner input = new Scanner(System.in);
                 ArrayList<Pais> paisos = new ArrayList<Pais>(); // Create an ArrayList object
 		Pais p;
@@ -47,10 +46,7 @@ public class Exercici2_SobrescrituraDePaisos {
 			}
                         System.out.println("Entra el número del registre:");
                         int num = input.nextInt();
-                        System.out.println("Entra nom país, codi ISO (3 caracters) y la capital:");
-                        nouPais = new Pais(input.nextLine(), "HVR", input.nextLine());
-                        paisos.remove(num);
-                        paisos.add(nouPais);
+                        paisos.get(num).setNom("Pont de Vilomara");
 
 		} catch (IOException e) {
 			System.err.println(e);

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fitxersmp6;
+package Examples;
 
-import static fitxersmp6.GeneraCodiSecret.NewFile;
+import static FitxersBinaris.GeneraCodiSecret.NewFile;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
